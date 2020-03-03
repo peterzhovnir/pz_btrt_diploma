@@ -1,0 +1,209 @@
+
+
+.banner-table__cell .container__banner{
+    max-width: 720px;
+}
+.main-banner-content {
+    & h1{
+        font-size: 85px;
+    }
+    & h3{
+        font-size: 20px;
+        letter-spacing: 2px;
+    }
+}
+
+//-------------- Our Story Start ------------//
+
+.story-flex{
+    flex: 0 0 100%;
+    max-width: 100%;
+}
+.story-flex__content{
+    margin-top: 40px;
+}
+
+//-------------- Our Story End ------------//
+
+
+//-------------- Start Stunning Things Start ------------//
+
+.single-box{
+    padding: 25px;
+}
+.row__st-wrap{
+    flex: 0 0 50%;
+    max-width: 50%;
+}
+
+//-------------- Start Stunning Things End ------------//
+
+//--------------------- Menu Start --------------------//
+
+.menu-card{
+    margin-bottom: 40px;
+    padding-left: 100px;
+    &__content{
+        & h3{
+            font-size: 20px;
+            margin: 0 0 9px;
+            & span{
+                font-size: 18px;
+                float: right;
+                margin-top: 0;
+            }
+        }
+        & ul{
+            & li{
+                margin-top: 6px;
+                flex: 0 0 33.333333%;
+                max-width: 33.333333%;
+            }
+        }
+    }
+}
+//--------------------- Menu End --------------------//
+
+//--------------------Reservation Area---------------//
+.reservation-area{
+    & h2{
+        font-size: 35px;
+        margin-top: -5px;
+        margin-bottom: 25px;
+    }
+}
+//-----------------Reservation Area End---------------//
+
+
+//----------------------Team Start----------------------------//
+//----------------------Team End----------------------------//
+
+//----------------------Gallery Start----------------------------//
+.grid-container{
+    grid-template-columns: 50% 50%;
+}
+
+
+.grid-image .popup-btn .image-content h3{
+    margin-top: 0;
+    font-size: 22px;
+}
+//----------------------Gallery End----------------------------//
+
+//----------------------Contact Start----------------------------//
+
+// CONTACT_FORM
+.ml-25{
+    margin-left: 25%;
+}
+
+#contactForm {
+    margin-top: 10px;
+    padding: 30px;
+    & .btn{
+        font-size: 14px;
+    }
+}
+.row_wrap_contact{
+    flex: 0 0 100%;
+    max-width: 100%;
+}
+#contactForm .row .row__wrap:nth-child(5){
+    flex: 0 0 100%;
+    max-width: 100%;
+}
+#contactForm .row .row__wrap:nth-child(6){
+    flex: 0 0 100%;
+    max-width: 100%;
+}
+
+// CONTACT_FORM
+//----------------------Contact End----------------------------//
+
+//----------------------Footer Start----------------------------//
+.footer-area{
+    & p {
+        font-size: 14px;
+        margin-bottom: 0;
+        color: #ffffff;
+    }
+    & ul{
+        text-align:none ;
+        margin: 0 0 0 0;
+    }
+}
+
+
+
+
+//----------------------Footer End----------------------------//
+
+//----------------------Button Start----------------------------//
+.go-top-btn{
+    bottom: 15px;
+    right: 15px;
+    font-size: 25px;
+    width: 55px;
+    height: 55px;
+    line-height: 60px;
+
+}
+
+
+//----------------------Button End----------------------------//
+
+
+
+.modal__center{
+    margin: 1.7rem auto;
+    max-width: 650px;
+}
+
+.modal-body{
+    flex: 1 1 auto;
+    padding: 25px 25px;
+}
+.modal-window__header{
+    padding: 25px 25px 20px;
+    display: block;
+    background: #f10909;
+    position: relative;
+    line-height: 1;
+}
+.modal-window .modal-window__header {
+    
+    & .close{
+        height: initial;
+        width: initial;
+        font-size: 1.5rem;
+        padding: 0;
+        margin: 0;
+        position: absolute;
+        right: 20px;
+        top: 20px;
+        opacity: 1;
+        float: right;
+        font-size: 1.5rem;
+        font-weight: 700;
+        line-height: 1;
+    }
+    & h5{
+        font-size: 22px;
+    }
+
+}
+.modalBookingForm .row .row__wrap:nth-child(7){
+    flex: 0 0 100%;
+    max-width: 100%;
+}
+
+
+.modalBookingForm .btn{
+    text-align: center;
+    font-size: 14px;
+    letter-spacing: 1px;
+    border-radius: 1px;
+    padding: 12px 30px 8px;
+    margin-top: 4px;
+    float: right;
+}

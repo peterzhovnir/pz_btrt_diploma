@@ -1,0 +1,67 @@
+//-------------- Banner Start ------------//
+
+.img-fluid-container {
+    height: 100vh;
+}
+
+.banner-table__cell .container__banner{
+    max-width: 1140px;
+}
+
+.main-banner-content {
+    margin-top: 140px;
+    & h1{
+        font-size: 130px;
+        line-height: 1.2;
+    }
+    & h3{
+        font-size: 25px;
+        letter-spacing: 2px;
+        margin: 0 0 40px 0;
+    }
+}
+
+// .main-banner-content {
+//     margin-top: 100px;
+//     text-align: center;
+// }
+//-------------- Banner End ------------//
+//-------------- Our Story Start ------------//
+
+
+.story-image .row__wrap:last-child{
+    display: block;
+}
+.story-image .row__wrap:first-child{
+    flex: 0 0 50%;
+    max-width: 50%;
+}
+.story-content{
+    margin-top: 0;
+}
+.story-qute__content:first-of-type img{
+    margin-top: 0;
+}
+.story-content{
+    max-width: 570px;
+}
+
+.line-bg{
+        display: block;
+        position: absolute;
+        right: 0;
+        bottom: 0;
+        height: auto;
+        width: auto;
+        z-index: 2;
+}
+
+//-------------- Our Story End ------------//
+
+//--------------------- Menu Start ------------------//
+
+
+//--------------------- Menu End --------------------//
+
+//--------------------Reservation Area---------------//
+//-----------------Reservation Area End---------------//

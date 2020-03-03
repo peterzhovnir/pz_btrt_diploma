@@ -1,0 +1,64 @@
+@import "base/index";
+@import "layouts/layout_000/index";
+
+// header{
+//     display: none;
+// }
+
+// .top-banner{
+//     display: none;
+// }
+
+// .about{
+//     display: none;
+// }
+
+// .stunning-things{
+//     display: none;
+// }
+
+// .menu-area{
+//     display: none;
+// }
+
+// .reservation-area{
+//     display: none;
+// }
+
+// .team-area{
+//     display: none;
+// }
+
+// .gallery-area{
+//     display: none;
+// }
+
+// .contact-area{
+//     display: none;
+// }
+
+// footer{
+//     display: none;
+// }
+
+// .go-top-btn{
+//     display: none;
+// }
+
+
+@media (min-width: 768px){
+    @import "layouts/layout_768/index";
+}
+
+@media (min-width: 992px){
+    @import "layouts/layout_992/index";
+}
+
+@media (min-width: 1200px){
+    @import "layouts/layout_1200/index";
+}
+
+@media (min-width: 1366px){
+    @import "layouts/layout_1366/index";
+}
+

@@ -1,0 +1,243 @@
+
+@import "vars";
+@import "mixins";
+@import "animation";
+// @import "icofont.min.scss";
+
+@import url("https://fonts.googleapis.com/css?family=Josefin+Sans:100,100i,300,300i,400,400i,600,600i,700,700i");
+@import url("https://fonts.googleapis.com/css?family=Cookie");
+
+
+
+.ptb-100 {
+    padding-top: 50px;
+    padding-bottom: 50px;
+  }
+
+  @media (min-width:768px){.ptb-100{
+    padding-top: 100px;
+    padding-bottom: 100px;
+
+  }}
+  @media only screen and (min-width: 768px) and (max-width: 991px){
+    .ptb-100{
+        padding-top: 70px;
+        padding-bottom: 70px;
+    
+      }
+
+  }
+
+.black-link .nav-bar__btn a{
+    color: black;
+    &:visited{
+        color: black;
+    }
+
+}
+
+p {
+    margin-top: 0;
+    margin-bottom: 1rem;
+    font-size: 16px;
+    color: #999999;
+    line-height: 1.6;
+}
+img{
+    max-width: 100%;
+    vertical-align: middle;
+    border-style: none;
+}
+//-------TITLES--------//
+.title-general{
+    text-align: center;
+    margin-top: -8px;
+    margin-bottom: 40px;
+    // margin-top: -13px;
+    // margin-bottom: 55px;
+    & span {
+        font-family: "Cookie", cursive;
+        display: block;
+        font-size: 22px;
+        margin-bottom: 5px;
+        color: #f10909;
+        line-height: 1.5;
+      }
+      h2 {
+        font-size: 28px;
+        // font-size: 40px;
+        font-weight: 600;
+        margin: 0;
+        line-height: 1.2;
+        color: inherit;
+      }
+    }
+
+@media (min-width:768px){.title-general{
+        margin-bottom: 50px;
+        & span{
+            font-size: 25px;
+        }
+        & h2{
+            font-size: 32px;
+        }
+}}
+@media (min-width:992px){.title-general{
+    margin-top: -13px;
+    margin-bottom: 55px;
+    & span{
+        font-size: 30px;
+        margin-bottom: 0;
+    }
+    & h2{
+        font-size: 40px;
+    }
+}}
+
+//-------TITLES-END--------//
+
+//-------------------Main Container Start------------------//
+
+.container-general{
+    width:100%;
+    padding-right:15px;
+    padding-left:15px;
+    margin-right:auto;
+    margin-left:auto
+}
+@media (min-width:576px){.container-general{max-width:540px}}
+@media (min-width:768px){.container-general{max-width:720px}}
+@media (min-width:992px){.container-general{max-width:960px}}
+@media (min-width:1200px){.container-general{max-width:1140px}}
+
+//-------------------Main Container End------------------//
+
+
+
+//-------------------BUTTON Start------------------//
+.btn {
+    font-weight: 600;
+    font-size: 15px;
+    border: 2px solid;
+    line-height: unset;
+    padding: 12px 35px 8px;
+    border-radius: 0;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    pointer-events: all;
+    cursor: pointer;
+  }
+  
+  .btn-primary {
+    color: #ffffff;
+    background-color: #f10909;
+    border-color: transparent;
+    position: relative;
+    z-index: 1;
+    transition: .6s;
+  }
+  .btn-primary:hover, .btn-primary:focus {
+    color: #f10909;
+    background-color: transparent;
+    border: 2px solid #f10909;
+  }
+  
+  
+
+@media(max-width:768px){
+    .btn{
+        font-size: 13px;
+        padding: 10px 30px 6px;
+        letter-spacing: 1px;
+    }
+}
+@media only screen and (max-width: 991px) and (min-width: 768px){
+    .btn{
+        font-size: 14px;
+    }
+}
+
+@media(min-width:992px){
+    .btn{
+        font-size: 15px;
+        padding: 12px 35px 8px;
+        letter-spacing: 2px;
+    }
+}
+//-------------------BUTTON End------------------//
+
+
+.ctr-row{
+    position: relative;
+    width: 100%;
+    min-height: 1px;
+    padding-right: 15px;
+    padding-left: 15px;
+}
+
+
+
+//-------------------FORM Start------------------//
+.form-control{
+    display: block;
+    width: 100%;
+    height: 45px;
+    font-size: 15px;
+    line-height: 1.5;
+    padding: 10px 10px 2px;
+    font-size: 15px;
+    color: #777777;
+    border: 1px solid #eeeeee;
+    border-radius: 5px;
+    background-color: rgb(212, 108, 148)(128, 20, 20);
+    background-clip: padding-box;
+    transition: border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+}
+
+#contactForm {
+    background: #ffffff;
+    -webkit-box-shadow: 7px 5px 30px rgba(72, 73, 121, 0.15);
+            box-shadow: 7px 5px 30px rgba(72, 73, 121, 0.15);
+    padding: 40px;
+    border-radius: 5px;
+    margin-top: 50px;
+  }
+
+
+
+
+
+//-------------------FORM End--------------------//
+
+
+.my-modal {
+    display: flex;
+    width: 100%;
+    height: 100%;
+    align-items: center;
+    justify-content: center;
+    position: fixed;
+    left: 0;
+    top: 0;
+    z-index: 999;
+
+    .background {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        background: black;
+        opacity: 0.7;
+    }
+
+    .image{
+        position: relative;
+        width: initial;
+        height: initial;
+    }
+}
+
+
+.error{
+    color: red;
+    margin-top: 8px;
+}

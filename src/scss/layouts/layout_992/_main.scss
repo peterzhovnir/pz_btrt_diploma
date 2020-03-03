@@ -1,0 +1,182 @@
+
+.banner-table__cell .container__banner{
+    max-width: 920px;
+}
+
+.main-banner-content {
+    & h1{
+        font-size: 110px;
+        line-height: 1.2;
+    }
+    & h3{
+        font-size: 25px;
+        letter-spacing: 2px;
+        margin: 0 0 40px 0;
+    }
+}
+
+//-------------- Our Story Start ------------//
+
+.story-flex{
+    flex: 0 0 50%;
+    max-width: 50%;
+}
+.story-flex__content{
+    margin-top: 0px;
+}
+.story-content{
+    margin-top: 70px;
+}
+
+.story-image .row__wrap:first-child{
+    flex: 0 0 100%;
+    max-width: 100%;
+}
+
+
+.story-image .row__wrap:last-child{
+    display: none;
+}
+
+//-------------- Our Story End ------------//
+
+//-------------- Start Stunning Things Start ------------//
+.row__st-wrap{
+    flex: 0 0 33.333333%;
+    max-width: 33.333333%;
+}
+
+//-------------- Start Stunning Things End ------------//
+
+//--------------------- Menu Start --------------------//
+.menu-card{
+    &__content{
+        & h3{
+            font-size: 22px;
+            margin: 0 0 9px;
+            & span{
+                font-size: 20px;
+            }
+        }
+    }
+}
+//--------------------- Menu End --------------------//
+
+//--------------------Reservation Area---------------//
+
+.reservation-area{
+    & h2{
+        font-size: 50px;
+    }
+}
+
+//-----------------Reservation Area End---------------//
+
+//----------------------Team Start----------------------------//
+//----------------------Team End----------------------------//
+
+//----------------------Gallery Start----------------------------//
+.grid-container{
+    grid-template-columns: 25% 25% 25% 25%;
+}
+//----------------------Gallery End----------------------------//
+
+//----------------------Contact Start----------------------------//
+// CONTACT_FORM
+.ml-25{
+    margin-left: 0;
+}
+
+.contact-info p.opening-hours{
+    float: none;
+    text-align: left;
+}
+
+.contact-area .container-general .row .row__wrap{
+    flex: 0 0 33.333333%;
+    max-width: 33.333333%;
+}
+
+
+.contact-area .container-general .row .row_wrap_contact{
+    flex: 0 0 100%;
+    max-width: 100%;
+}
+
+.contact-info{
+    margin-bottom: 0;
+}
+
+
+#contactForm {
+    margin-top: 50px;
+    padding: 40px;
+    & .row {
+        & .row__wrap{
+            &:nth-child(1){
+                flex: 0 0 50%;
+                max-width: 50%;
+            }
+            &:nth-child(2){
+                flex: 0 0 50%;
+                max-width: 50%;
+            }
+            &:nth-child(3){
+                flex: 0 0 50%;
+                max-width: 50%;
+            }
+            &:nth-child(4){
+                flex: 0 0 50%;
+                max-width: 50%;
+            }
+        }
+    }
+}
+// CONTACT_FORM
+//----------------------Contact End----------------------------//
+
+//----------------------Footer Start----------------------------//
+.footer-area{
+    & p {
+        font-size: 1rem;
+        text-align: left;
+    }
+    & ul{
+        text-align: right;
+        & li{
+            & a {
+                font-size: 1rem;
+            }
+        }
+    }
+}
+
+
+//----------------------Footer End----------------------------//
+
+//----------------------Button Start----------------------------//
+.go-top{
+    display: block;
+    position: fixed;
+    cursor: pointer;
+    bottom: 15px;
+    right: 15px;
+    font-size: 25px;
+    color: #ffffff;
+    background-color: #000000;
+    z-index: 4;
+    display: none;
+    width: 55px;
+    text-align: center;
+    height: 55px;
+    line-height: 60px;
+    border-radius: 50%;
+    transition: .4s;
+    &:hover{
+        color: #ffffff;
+        background: #f10909;
+    }
+}
+
+
+//----------------------Button End----------------------------//
