@@ -8,7 +8,6 @@ const ConcatPlugin = require("webpack-concat-plugin");
 const CopyWebpackPlugin = require("copy-webpack-plugin");
 const webpack = require("webpack");
 
-const jsArr = ["./src/js/ssm.min.js", "./src/js/script.js"];
 
 const files = fs.readdirSync(path.join(__dirname, "src"));
 const templatesFiles = files.filter(el => /\.html$/.test(el)) || [];
@@ -18,16 +17,9 @@ module.exports = (env = { mode: "development" }) => {
 
   const plugins = [
     new MiniCssExtractPlugin({ filename: "css/style.css" }),
-    new ConcatPlugin({
-      uglify: isProduction,
-      sourceMap: !isProduction,
-      name: "combinejs",
-      outputPath: "js/",
-      fileName: "script.js",
-      filesToConcat: jsArr,
-      attributes: {
-        async: true
-      }
+    new webpack.ProvidePlugin({
+      $: 'jquery',
+      jQuery: 'jquery'
     })
   ];
   if (!isProduction) {
@@ -90,7 +82,12 @@ module.exports = (env = { mode: "development" }) => {
             },
             {
               loader: "sass-loader",
-              options: { sourceMap: !isProduction }
+              options: {
+                sourceMap: !isProduction,
+                sassOptions: {
+                  outputStyle: isProduction ? "compressed" : "expanded"
+                }
+              }
             }
           ]
         }
@@ -102,7 +99,7 @@ module.exports = (env = { mode: "development" }) => {
     devServer: {
       contentBase: path.join(__dirname, "src"),
       compress: true,
-      port: 9000,
+      port: 3000,
       overlay: true,
       stats: {
         modules: false

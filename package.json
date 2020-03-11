@@ -37,5 +37,9 @@
     "webpack-dev-server": "^3.8.2",
     "webpack-merge-and-include-globally": "^2.1.20"
   },
-  "dependencies": {}
+  "dependencies": {
+    "jquery": "^3.4.1",
+    "jquery-validation": "^1.19.1",
+    "slick-carousel": "^1.8.1"
+  }
 }
